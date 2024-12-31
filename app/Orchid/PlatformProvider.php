@@ -34,11 +34,11 @@ class PlatformProvider extends OrchidServiceProvider
     public function menu() : array
     {
         return [
-            Menu::make( __( 'Users' ) )
+            Menu::make( __( 'Администраторы' ) )
                 ->icon( 'bs.people' )
                 ->route( 'platform.systems.users' )
                 ->permission( 'platform.systems.users' )
-                ->title( __( 'Access Controls' ) ),
+                ->title( __( 'Управление Админами' ) ),
 
             Menu::make( __( 'Roles' ) )
                 ->icon( 'bs.shield' )

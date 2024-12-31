@@ -24,7 +24,7 @@ class PlatformScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Get Started';
+        return 'Добро Пожаловать!';
     }
 
     /**
@@ -32,7 +32,7 @@ class PlatformScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Welcome to your Orchid application.';
+        return 'Вы в безопасном пространстве <3';
     }
 
     /**
@@ -52,9 +52,7 @@ class PlatformScreen extends Screen
      */
     public function layout(): iterable
     {
-        return [
-            Layout::view('platform::partials.update-assets'),
-            Layout::view('platform::partials.welcome'),
-        ];
+        // @TODO Сделать метрики с основными данными приложения
+        return [];
     }
 }
